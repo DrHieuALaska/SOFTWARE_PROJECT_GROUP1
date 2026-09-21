@@ -3,7 +3,6 @@ const express = require('express');
 const requestLogger = require('./middlewares/RequestLogger.middleware');
 const notFound = require('./middlewares/NotFound.middleware');
 const errorHandler = require('./middlewares/ErrorHandler.middleware');
-const { ensureAppReady } = require('./bootstrap/appInit');
 const authRoutes = require('./modules/auth/auth.routes');
 const usersRoutes = require('./modules/users/users.routes');
 const membershipsRoutes = require('./modules/memberships/memberships.routes');
@@ -54,14 +53,6 @@ app.use(cors({
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
-
-app.get('/health', ensureAppReady, (req, res) => {
-  res.status(200).json({ status: 'ok' });
-});
-
-if (process.env.NODE_ENV !== 'test') {
-  app.use(ensureAppReady);
-}
 
 app.use('/api/auth', authRoutes);
 app.use('/api/users', usersRoutes);

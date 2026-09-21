@@ -31,5 +31,3 @@ temp/
 .DS_Store
 Thumbs.db
 
-# docker local overrides
-docker-compose.override.yml

@@ -3,26 +3,6 @@
 
 > A centralized, web-based gym management and fitness tracking platform designed for gym members and administrators.
 
-## 📖 Table of Contents
-
-- [About the Project](#-about-the-project)
-- [Features](#-features)
-- [System Roles](#-system-roles)
-- [Technology Stack](#-technology-stack)
-- [Project Structure](#-project-structure)
-- [Prerequisites](#-prerequisites)
-- [Installation and Setup](#-installation-and-setup)
-  - [1. Clone the Repository](#1-clone-the-repository)
-  - [2. Install Dependencies](#2-install-dependencies)
-  - [3. Configure Environment Variables](#3-configure-environment-variables)
-  - [4. Set Up the Database](#4-set-up-the-database)
-  - [5. Run the Application](#5-run-the-application)
-- [Environment Variables](#-environment-variables)
-- [Usage](#-usage)
-- [Documentation](#-documentation)
-- [Team Members](#-team-members)
-- [License](#-license)
-
 ---
 
 ##  About the Project
